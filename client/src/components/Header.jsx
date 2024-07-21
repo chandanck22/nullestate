@@ -17,9 +17,9 @@ const Header = () => {
             <span>Null Estate</span>
           </h1>
         </Link>
-        <form className='bg-slate-100 p-3 rounded-lg flex items-center'>
+        <form className='bg-slate-500 p-3 rounded-lg flex items-center'>
           <input className='bg-transparent focus:outline-none w-24 sm:w-64' type="text" placeholder='Search...' />
-          <button> <FaSearch className='text-slate-600' /> </button>
+          <button> <FaSearch className='text-slate-100' /> </button>
         </form>
         <div className='lg:flex hidden'>
           <ul className='flex gap-4'>

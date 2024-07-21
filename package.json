@@ -1,0 +1,21 @@
+{
+  "name": "nullestate",
+  "version": "1.0.0",
+  "description": "NullEstate is a web application designed for users to buy or rent houses. It provides a platform where sellers can upload their properties for sale or rent, while buyers can browse listings and make inquiries. The project is built using Node.js, Express, MongoDB, and Firebase for authentication.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon api/index.js",
+    "start": "node api/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
