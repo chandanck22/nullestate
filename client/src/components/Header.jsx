@@ -2,9 +2,12 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const {currentUser} = useSelector(state => state.user);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -28,7 +31,7 @@ const Header = () => {
                 About
               </li>
             </Link>
-            {/* <Link to="/profile">
+            <Link to="/profile">
               {currentUser ? (
                 <img className='rounded-full h-7 w-7 object-cover' src={currentUser.avatar} alt="avatar" />
               ) : (
@@ -36,7 +39,7 @@ const Header = () => {
                   Sign In
                 </li>
               )}
-            </Link> */}
+            </Link>
           </ul>
         </div>
 
@@ -54,7 +57,7 @@ const Header = () => {
         <li className='hover:underline'>
           <Link className='font-bold' to="/about">About</Link>
         </li>
-        {/* <Link to="/profile">
+        <Link to="/profile">
           {currentUser ? (
             <img className='rounded-full h-7 w-7 object-cover inline-block' src={currentUser.avatar} alt="avatar" />
           ) : (
@@ -62,7 +65,7 @@ const Header = () => {
               Sign In
             </li>
           )}
-        </Link> */}
+        </Link>
       </ul>
 
     </header>
